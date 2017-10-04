@@ -1,0 +1,55 @@
+:host /deep/ .data-table-row {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rm-panel {
+    background-color: #fff;
+    border: 1px solid #074255;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+.rm-panel--header {
+    font-family: SourceSansProBold;
+    color: #fff;
+    background-color: #074255;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.rm-panel--body {
+    padding: 0;
+}
+.rm-subpanel {
+    border-bottom: 2px solid #074255;
+    
+}
+.rm-subpanel--header {
+    color: #074255;
+    background-color: #d7e6ed;
+    font-size: 15px;
+    padding: 8px;
+    font-family: SourceSansProBold;
+    line-height: 1em;
+}
+.rm-subpanel--body {
+    color: #074255;
+    background-color: #fff;
+    line-height: 2em;
+}
+.rm-subpanel--body--withpadding {
+    color: #074255;
+    background-color: #fff;
+    padding: 15px;
+}
+.rm-panel--loader {
+    display: inline-block;
+    height: 20px;
+    margin: -10px 5px 0 0;
+    vertical-align: middle;
+}

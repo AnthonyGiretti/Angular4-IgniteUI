@@ -1,0 +1,51 @@
+
+<div class="row">
+<div class="col-md-2"></div>
+
+<div class="col-md-8">
+
+    <div class="col-md-8">
+<!-- 
+        <md-select placeholder="Choose a terminal" [(ngModel)]="chosenTerminal" >
+           <md-option *ngFor="let terminal of terminals" [value]="terminal.ID" (click)="onChange(terminal)">
+              {{ terminal.Name }}
+           </md-option>
+        </md-select> -->
+        <div class="btn-group" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+            <label ngbButtonLabel class="btn-primary">
+              <input ngbButton type="radio"  (click)="onChange(1)"> Montreal
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+              <input ngbButton type="radio" (click)="onChange(2)" > Vancouver
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+              <input ngbButton type="radio"  (click)="onChange(3)"> Prince Rupert
+            </label>
+          </div>
+        
+
+    </div>
+
+    <div class="col-md-4">
+
+    </div>   
+</div>
+  
+
+<div class="col-md-2"></div>
+  
+
+</div>
+
+<div class="row">
+<ig-grid 
+  [(options)]="gridOptions" 
+  [(widgetId)]="id">
+  
+
+  
+</ig-grid>
+<div class="row">
+
+</div>
+</div>
